@@ -1,1 +1,194 @@
 
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projecte de quatre barres</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;color:#172437;background:#f5f7fa;line-height:1.6}
+header{background:#101c2c;color:white;text-align:center;padding:45px 15px}
+header h1{font-size:40px;margin:10px}
+header span{color:#ff9b50}
+header p{color:#d5e0eb}
+nav{background:#17283d;padding:15px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;position:sticky;top:0;z-index:5}
+nav a{color:white;text-decoration:none;font-size:13px;padding:6px}
+nav a:hover{color:#ff9b50}
+main{max-width:1000px;margin:auto;padding:20px}
+section{background:white;margin:25px 0;padding:28px;border-radius:12px;box-shadow:0 3px 15px #0000000c}
+h2{color:#b45d20;border-bottom:2px solid #ff9b50;padding-bottom:8px}
+h3{color:#17283d}
+.card{background:#f5f7fa;padding:17px;border-radius:9px;margin:12px 0}
+.photo{border:2px dashed #b7c4d1;padding:25px;text-align:center;color:#718096;margin:12px 0}
+table{width:100%;border-collapse:collapse}
+td,th{padding:12px;border:1px solid #ddd;text-align:left}
+th{background:#17283d;color:white}
+footer{background:#101c2c;color:white;text-align:center;padding:30px}
+.diagram{display:block;max-width:500px;width:100%;margin:20px auto}
+@media(max-width:600px){header h1{font-size:29px}section{padding:18px}nav{gap:5px}}
+</style>
+</head>
+<body>
+
+<header>
+<p>PROJECTE DE TECNOLOGIA</p>
+<h1>El mecanisme <span>de quatre barres</span></h1>
+<p>Johan Castro i Alex Callejo</p>
+<p>Disseny, construcció i funcionament del nostre mecanisme</p>
+</header>
+
+<nav>
+<a href="#diari">Diari</a>
+<a href="#funcio">Funció</a>
+<a href="#historia">Història</a>
+<a href="#aplicacions">Aplicacions</a>
+<a href="#calculs">Càlculs</a>
+<a href="#construccio">Construcció</a>
+<a href="#pressupost">Pressupost</a>
+<a href="#materials">Materials</a>
+<a href="#eines">Eines</a>
+</nav>
+
+<main>
+
+<section id="diari">
+<h2>1. Diari del projecte</h2>
+<p>En aquest apartat explicarem el desenvolupament del nostre projecte de construcció d'un mecanisme de quatre barres.</p>
+
+<div class="card">
+<h3>Sessió 1: Planificació</h3>
+<p>Hem investigat què és un mecanisme de quatre barres i hem començat a planificar la construcció.</p>
+<div class="photo">📷 Afegiu aquí una fotografia de la sessió 1</div>
+</div>
+
+<div class="card">
+<h3>Sessió 2: Preparació dels materials</h3>
+<p>Hem preparat els palets de gelat, els cargols i les arandeles que utilitzarem per construir el mecanisme.</p>
+<div class="photo">📷 Afegiu aquí una fotografia de la sessió 2</div>
+</div>
+
+<div class="card">
+<h3>Sessió 3: Muntatge</h3>
+<p>Hem començat a unir els palets mitjançant cargols i arandeles per aconseguir que les barres puguin girar.</p>
+<div class="photo">📷 Afegiu aquí una fotografia de la sessió 3</div>
+</div>
+
+<div class="card">
+<h3>Sessió 4: Proves finals</h3>
+<p>Comprovarem el moviment del mecanisme i farem els ajustaments necessaris.</p>
+<div class="photo">📷 Afegiu aquí una fotografia de la sessió 4</div>
+</div>
+</section>
+
+<section id="funcio">
+<h2>2. Funció</h2>
+<p>El mecanisme de quatre barres és un sistema format per quatre elements rígids units mitjançant articulacions que permeten el moviment.</p>
+<p>La seva funció principal és transmetre o transformar moviments. Pot convertir un moviment giratori en un moviment oscil·latori.</p>
+<h3>Parts principals</h3>
+<ul>
+<li>Bastidor: barra que es manté fixa.</li>
+<li>Manovella: barra que pot girar completament.</li>
+<li>Biela: connecta els elements mòbils.</li>
+<li>Balancí: realitza un moviment oscil·latori.</li>
+</ul>
+</section>
+
+<section id="historia">
+<h2>3. Història</h2>
+<p>Els mecanismes articulats s'utilitzen des de fa molts segles en màquines i eines.</p>
+<p>Durant la Revolució Industrial, els mecanismes de quatre barres van adquirir molta importància perquè permetien transformar moviments i automatitzar processos.</p>
+<p>Actualment es continuen utilitzant en l'enginyeria, la indústria i la robòtica.</p>
+</section>
+
+<section id="aplicacions">
+<h2>4. Exemples d'aplicació</h2>
+<div class="card">
+<h3>Vehicles</h3>
+<p>Els sistemes de netejaparabrises utilitzen mecanismes articulats per transformar el gir del motor en moviment oscil·latori.</p>
+</div>
+<div class="card">
+<h3>Màquines industrials</h3>
+<p>S'utilitzen per transmetre moviments repetitius en diferents processos de fabricació.</p>
+</div>
+<div class="card">
+<h3>Robòtica</h3>
+<p>Permeten controlar el moviment de braços i peces mecàniques.</p>
+</div>
+</section>
+
+<section id="calculs">
+<h2>5. Càlculs</h2>
+<p>Per estudiar el mecanisme necessitem conèixer la longitud de les quatre barres.</p>
+<h3>Condició de Grashof</h3>
+<p>s + l ≤ p + q</p>
+<p>On:</p>
+<ul>
+<li>s és la barra més curta.</li>
+<li>l és la barra més llarga.</li>
+<li>p i q són les altres dues barres.</li>
+</ul>
+<p>Aquesta condició ens ajuda a determinar si alguna de les barres pot fer una volta completa.</p>
+<h3>Mesures del nostre mecanisme</h3>
+<p>Afegirem aquí les mesures reals dels palets i les distàncies entre els eixos.</p>
+</section>
+
+<section id="construccio">
+<h2>6. Procés de construcció</h2>
+<ol>
+<li>Dissenyar el mecanisme i decidir les dimensions.</li>
+<li>Mesurar els palets de gelat.</li>
+<li>Marcar els punts on farem els forats.</li>
+<li>Fer els forats amb un trepant i la supervisió del professor.</li>
+<li>Unir les barres amb cargols i arandeles.</li>
+<li>Comprovar que les articulacions es mouen correctament.</li>
+<li>Fer les millores necessàries.</li>
+</ol>
+</section>
+
+<section id="pressupost">
+<h2>7. Pressupost</h2>
+<table>
+<tr><th>Material</th><th>Quantitat</th><th>Preu</th></tr>
+<tr><td>Palets de gelat</td><td>A completar</td><td>A completar</td></tr>
+<tr><td>Cargols</td><td>A completar</td><td>A completar</td></tr>
+<tr><td>Arandeles</td><td>A completar</td><td>A completar</td></tr>
+<tr><th colspan="2">TOTAL</th><th>A calcular</th></tr>
+</table>
+<p>Els preus s'afegiran segons el cost real dels materials utilitzats.</p>
+</section>
+
+<section id="materials">
+<h2>8. Materials utilitzats</h2>
+<ul>
+<li>Palets de gelat: formen les quatre barres del mecanisme.</li>
+<li>Cargols: serveixen per unir les barres i crear els eixos de gir.</li>
+<li>Arandeles: separen les peces i ajuden a reduir el fregament.</li>
+</ul>
+<div class="photo">📷 Afegiu fotografies dels materials</div>
+</section>
+
+<section id="eines">
+<h2>9. Eines utilitzades</h2>
+<ul>
+<li>Regle: per mesurar els palets.</li>
+<li>Llapis: per marcar els punts dels forats.</li>
+<li>Trepant i broca fina: per fer els forats, amb supervisió del professor.</li>
+<li>Destornillador: per ajustar els cargols.</li>
+<li>Alicates: per subjectar les peces.</li>
+</ul>
+<div class="photo">📷 Afegiu fotografies de les eines</div>
+</section>
+
+</main>
+
+<footer>
+<h3>Projecte de quatre barres</h3>
+<p>Johan Castro i Alex Callejo</p>
+<p>Projecte de tecnologia</p>
+</footer>
+
+</body>
+</html>
+
